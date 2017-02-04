@@ -36,14 +36,4 @@ function tweetIt(txt){
 
 tweetIt("hey");
 
-//Setting up a user stream
-var stream = T.stream('user');
-//Anytine someone follows me
-stream.on('follow', followed)
-
-function followed(eventMsg){
-  var name = event.source.nam;
-  var screenName = event.source.screen_name;
-  tweetIt('.@' + screenName + 'Thanks for following me!')
-}
 //setInterval(tweetIt, 1000*20);
